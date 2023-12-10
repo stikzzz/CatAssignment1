@@ -1,0 +1,30 @@
+<!-- <?php
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_FILES["pdfFile"])) {
+    if ($_FILES["pdfFile"]["error"] === UPLOAD_ERR_OK) {
+        // File uploaded successfully, proceed with processing
+        $upload_dir = "C:/xampp/htdocs/Assignment3/src/uploads/";
+        $output_dir = "C:/xampp/htdocs/Assignment3/src/converted/";
+
+        $target_file = $upload_dir . basename($_FILES["pdfFile"]["name"]);
+        $file_type = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
+
+        // Check if the file is a PDF
+        if ($file_type != "pdf") {
+            echo "Only PDF files are allowed.";
+            exit();
+        }
+
+        if (move_uploaded_file($_FILES["pdfFile"]["tmp_name"], $target_file)) {
+            // File uploaded successfully, continue processing
+            // ... (rest of your processing code)
+        } else {
+            echo "Sorry, there was an error moving the uploaded file.";
+        }
+    } else {
+        echo "File upload failed with error code: " . $_FILES["pdfFile"]["error"];
+    }
+} else {
+    echo "No file uploaded or invalid request method.";
+}
+
+?> -->

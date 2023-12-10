@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="icon" type="image/png" href="D:\Users\Chin Zhen Ang\Desktop\New folder\htdocs\OfficialCat2\OfficialCat\src\txt_to_pdf_bidirectional-removebg-preview.png" />
+    <title>Convert Space</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1 class="titleheader">CONVERT SPACE</h1>
+    <p class="text">Convert PDF to TXT and TXT to PDF!</p>
+    
+        <div class="image">
+            <img src="D:\Users\Chin Zhen Ang\Desktop\New folder\htdocs\OfficialCat2\OfficialCat\src\txt_to_pdf_bidirectional-removebg-preview.png" class="homepageimage">
+        </div>
+        <div class="drop-box">
+            <!-- Form for converting PDF to Text -->
+            <form action="action1.php" method="post" enctype="multipart/form-data">
+                <label for="pdfUpload" style="cursor: pointer;">
+                </label>
+                <input id="pdfUpload" name="fileToUpload" type="file" style="display: none" accept=".pdf" />
+                <div>
+                    <input type="submit" value="Convert PDF to Text" name="submit" style="margin-top:20px;margin-right: 20px;" class="uploadButton">
+                </div>
+            </form>
+
+            <!-- Form for converting Text to PDF -->
+            <form action="action2.php" method="post" enctype="multipart/form-data">
+                <label for="textUpload" style="cursor: pointer;">
+                </label>
+                <input id="textUpload" name="fileToUpload" type="file" style="display: none" accept=".txt" />
+                <div>
+                    <input type="submit" value="Convert Text to PDF" name="submit" style="margin-top:20px;" class="uploadButton">
+                </div>
+            </form>
+        </div>
+    
+    <!-- <form action="download-action.php" method="get">
+        <input type="submit" value="Convert and Download" class="downloadButton">
+    </form> -->
+
+    <div class="footer">
+
+        <a href="#" id="aboutUsBtn">About Us</a>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>About Us</h2>
+            <div class="about-section">
+                <!-- <img src="https://github.com/legna7710/GroupPhoto/blob/main/CAT201.png?raw=true" alt="Group Photo"> -->
+                <div class="description">
+                    <p>
+                        We are Year 2 students from the <i>School of Computer Sciences, Universiti Sains Malaysia.</i>
+                        <b>We love cats and CAT201! &#128525</b>
+                    </p>
+                    <div class="group-members">
+                        <h3>Group Members:</h3>
+                        <h4>
+                            <b>1. Ong Hsien Hung 164848</b>
+                            <br> <b>2. Ang Chin Zhen 164820</b>
+                            <br> <b>3. Edwin Chia Yi Yang 163904</b>
+                            <br> <b>4. Hong Jinglong 164243</b>
+                        </h4>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById('myModal');
+        const aboutUsBtn = document.getElementById('aboutUsBtn');
+        const closeBtn = document.getElementsByClassName('close')[0];
+
+        aboutUsBtn.addEventListener('click', () => {
+            modal.style.display = 'block';
+        });
+
+        closeBtn.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
+</body>
+</html>
